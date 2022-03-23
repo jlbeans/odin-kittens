@@ -1,0 +1,7 @@
+<%= simple_form_for @kitten do |f| %>
+  <%= f.input :name, label: "Name" %>
+  <%= f.input :age, label: "Age in Months", as: :integer %>
+  <%= f.input :cuteness, label: "Cuteness level", as: :integer, placeholder: "Scale from 1-10" %>
+  <%= f.input :softness, label: "Softness level", as: :integer, placeholder: "Scale from 1-10"%>
+  <%= f.button :submit %>
+<% end %>

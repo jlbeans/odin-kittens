@@ -1,0 +1,8 @@
+<p><%= "Kitten Name: #{@kitten.name}" %></p>
+<p><%= "Kitten Age: #{@kitten.age} months old" %></p>
+<p><%= "Kitten Cuteness: #{@kitten.cuteness}" %></p>
+<p><%= "Kitten Softness: #{@kitten.softness}" %></p>
+
+<%= link_to 'Edit', edit_kitten_path(@kitten) %>
+<%= link_to 'Back', kittens_path %>
+<%= link_to 'Delete', @kitten, method: :delete, data: {confirm: "Are you sure you want to delete this item?"} %>
